@@ -10,6 +10,17 @@ This module adds a new page as child of setup called "Template Editor". It allow
 
 A nice addition for this module is [AdminHotKeys](http://processwire.com/talk/topic/1524-admin-hot-keys/) which allows you e.g. to use CTRL+S for saving the file.
 
+
+## Changelog
+
+### 2016-08-08 (rolandtoth)
+
+- allow editing of module files from site/modules directory
+- fix for detecting namespaced Textarea inputfields (ProcessWire 3+)
+- added AdminOnSteroids ctrl+s for save support
+
+
 ## Todo (until 2.0.0)
+
 - add new file
 - show URLs to files
