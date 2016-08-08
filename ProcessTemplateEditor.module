@@ -78,7 +78,8 @@ class ProcessTemplateEditor extends Process implements Module, ConfigurableModul
 
         // we get all files from the template folder + .modules from sitemodules
         $files = $this->rglob('*.*', 0, $this->config->paths->templates);
-        $files = array_merge($files, $this->rglob('*.module', 0, $this->config->paths->siteModules));
+        $files = array_merge($files, $this->rglob('*.module', GLOB_BRACE, $this->config->paths->siteModules));
+//        $files = array_merge($files, $this->rglob('*.{module,php,inc,css,js,md}', GLOB_BRACE, $this->config->paths->siteModules));
 
         if (count($files)) {
             foreach ($files as $file) {
